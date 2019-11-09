@@ -2,9 +2,9 @@
   margin: 0;
   padding: 0;
 }
-/* body{
-  
-} */
+ul{
+  list-style: none;
+}
 
 .header {
   width: 100%;
@@ -13,10 +13,10 @@
   flex-flow: column;
   align-items: center;
   justify-content: space-around;
-  background: url('../image/home-bg.png')  no-repeat;
+  background: url('../image/home-bg.png') no-repeat;
   background-size: 100% auto;
 }
-.header img{
+.header img {
   padding-top: 20px;
   width: 70%;
 }
@@ -39,11 +39,11 @@
   font-size: 14px;
   color: #aeaeae;
 }
-section {
+.index-section {
   padding: 30px 15px;
   border-bottom: 1px solid #f5f8f9;
 }
-section:last-of-type{
+.index-section:last-of-type {
   border-bottom: none;
 }
 .header form button {
@@ -55,7 +55,7 @@ section:last-of-type{
 article header {
   display: flex;
 }
-article header img{
+article header img {
   width: 50px;
 }
 article header h4 {
@@ -67,7 +67,7 @@ article .list {
   display: flex;
   flex-wrap: wrap;
 }
-article .list div{
+article .list div {
   margin: 5px;
   padding: 5px 16px;
   border-radius: 20px;
@@ -75,7 +75,7 @@ article .list div{
   font-size: 14px;
   color: #aeaeae;
 }
-footer{
+footer {
   display: flex;
   padding-top: 20px;
   padding-bottom: 50px;
@@ -83,4 +83,86 @@ footer{
   align-items: center;
   font-size: 12px;
   color: #919aa7;
+}
+
+.list-header div {
+  height: 55px;
+  display: flex;
+  padding: 0 15px;
+  justify-content: space-around;
+  align-items: center;
+}
+.list-header img {
+  height: 20px;
+}
+.list-header form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f4f7f9;
+  padding: 4px 12px;
+  border-radius: 35px;
+  font-size: 14px;
+}
+.list-header form .city {
+  height: 12px;
+  display: inline-block;
+  padding-right: 10px;
+  border-right: 1px #e5e9f3 solid;
+  line-height: 12px;
+}
+.list-header form input {
+  height: 20px;
+  margin: 0 10px;
+  border: 0;
+  outline: 0;
+  background-color: #f4f7f9;
+  color: #8b96a6;
+}
+.list-header button {
+  color: #5dd5ca;
+  background: 0, 0;
+  border: 0;
+  outline: 0;
+  font-size: 15px;
+}
+.list-section{
+  border-top: 1px #e5e9f3 solid;
+}
+.list-section ul li {
+  display: flex;
+  margin: 10px;
+  padding: 15px;
+  list-style: none;
+  border-bottom: 1px #e5e9f3 solid;
+}
+.list-section ul li:last-of-type {
+  border-bottom: 0;
+}
+.list-section ul li img {
+  float: 1;
+  width: 59px;
+  height: 59px;
+  border-radius: 5px;
+}
+.list-section ul li .info {
+  flex: 3;
+  height: 59px;
+  padding: 0 15px
+}
+.list-section ul li .info .job{
+  font-size: 15px;
+}
+.list-section ul li .company {
+  line-height: 23px;
+  font-size: 12px;
+}
+.list-section ul li .other {
+  font-size: 12px;
+  color: #8b96a6;
+}
+.list-section ul li .salary {
+  float: 1;
+  font-size: 19px;
+  color: #fc6c38;
 }
